@@ -1,0 +1,55 @@
+.dream-ai {
+    overflow: scroll;
+    .at-tabs__item {
+        font-size: 0.7rem;
+    }
+    
+    .inner-block {
+        display: inline-block;
+        .at-button {
+            border-radius: 25px;
+            position: fixed;
+            right: 13px;
+            top: 180px;
+            z-index: 1;
+            background: #fff;
+            height: 44px;
+            font-size: 14px;
+        }
+    }
+    
+    .test-h {
+        height: 11.5rem;
+    }
+    .images-box {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+        &-item {
+            margin: 10px;
+            fill: #F9F9F9;
+            filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.25));
+            p {
+                color: #051222;
+                font-family: Poppins;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: unset;
+            }
+            span {
+                color: #051222;
+                font-family: Poppins;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: unset;
+            }
+        }
+    }
+
+    .at-tabs__body {
+        display: none;
+    }
+}

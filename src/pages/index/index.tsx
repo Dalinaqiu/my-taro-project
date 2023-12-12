@@ -2,10 +2,11 @@ import { useState } from 'react'
 import { View, Text, Swiper, SwiperItem, Image } from '@tarojs/components'
 import Taro, { useLoad } from '@tarojs/taro'
 import { AtTabs, AtTabsPane, AtSearchBar, AtButton } from 'taro-ui'
-import Harry from './static/images/harry.png';
-import Woman1 from './static/images/woman1.png';
-import Woman2 from './static/images/woman2.png';
-import Woman3 from './static/images/woman3.png';
+import Harry from './static/images/harry.png'
+import Woman1 from './static/images/woman1.png'
+import Woman2 from './static/images/woman2.png'
+import Woman3 from './static/images/woman3.png'
+import Account from './static/images/account.png'
 import './index.less'
 
 export const imagesArr = [
@@ -77,7 +78,12 @@ export default function Index() {
           <div key={item.title} className='images-box-item' onClick={goToDetail}>
             <Image className='' src={item.image} />
             <p>{item.title}</p>
-            <span>{item.content}</span>
+            <div className='images-box-flex'>
+              <span>{item.content}</span>
+              <Image className='images-box-flex-account' src={Account}></Image>
+            </div>
+            
+            
           </div>
         ))}
       </View>

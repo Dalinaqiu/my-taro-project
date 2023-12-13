@@ -19,7 +19,8 @@
     }
     
     .test-h {
-        height: 11.5rem;
+        height: auto;
+        background-image: url(../index/static/images/board.png);
     }
     .images-box {
         padding: 10px;
@@ -27,10 +28,14 @@
         grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(2, 50%);
         &-item {
+            border-radius: 24px;
             margin: 10px;
             fill: #F9F9F9;
             filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.25));
+            box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+            padding-bottom: 20px;
             p {
+                padding: 0 20px;
                 color: #051222;
                 font-family: Poppins;
                 font-size: 32px;
@@ -49,8 +54,9 @@
         }
         &-flex {
             display: flex;
+            padding: 0 20px;
             &-account {
-                width: 2.6rem;
+                width: 3rem;
                 height: 1.6rem;
                 border-radius: 50%;
             }
@@ -60,4 +66,32 @@
     .at-tabs__body {
         display: none;
     }
+
+    .demo-text-1 {
+        background-color: #FF59DD2F;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 20px;
+    }
+    .list-catagory {
+        display: flex;
+        border-bottom: 1px solid #EDEDED;
+        padding: 10px 10px 10px 30px;
+        > span:first-child {
+            color: #D70B5F;
+        }
+        > span {
+            color: #062C81;
+            font-family: Poppins;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px; /* 150% */
+            display: inline-block;
+            margin: 0 20px;
+        }
+    }
+}
+taro-image-core {
+    border-radius: 20px;
 }

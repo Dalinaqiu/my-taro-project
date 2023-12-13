@@ -39,6 +39,7 @@ export default function Index() {
   return (
     <div className='dream-ai'>
       <AtSearchBar
+        placeholder='Search for dreams'
         value={value}
         onChange={e => setValue(e)}
       />
@@ -66,6 +67,9 @@ export default function Index() {
           Get started
         </AtButton>
       </View> */}
+      <span className='list-catagory'>
+        {['Recommended', 'Fan fiction', 'Sci-fi', 'RPG', '>'].map(item => <span key={item}>{item}</span>)}
+      </span>
       <AtTabs current={current} tabList={tabList} onClick={(e)=>{setCurrent(e)}}>
         <AtTabsPane current={current} index={0} >
           <View className='index'>
